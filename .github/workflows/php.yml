@@ -31,5 +31,4 @@ jobs:
           php_extensions: "json"
           args: "-d date.timezone=Europe/Budapest"
           memory_limit: 300M
-          configuration: phpunit.xml.dist
           testsuite: unittest
