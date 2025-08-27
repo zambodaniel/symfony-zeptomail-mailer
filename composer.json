@@ -1,0 +1,29 @@
+{
+    "name": "zdaniel/symfony-zeptomail-mailer",
+    "type": "symfony-mailer-bridge",
+    "description": "Zoho Zeptomail Bridge",
+    "keywords": ["symfony", "mailer", "bridge", "zeptomail", "zoho"],
+    "homepage": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Zambo",
+            "homepage": "https://github.com/zambodaniel"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "symfony/mailer": "^6.2|^7.0"
+    },
+    "require-dev": {
+        "symfony/http-client": "^5.4|^6.4|^7.0",
+        "phpunit/phpunit": "^9.5|^10.0"
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Component\\Mailer\\Bridge\\Zepto\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
